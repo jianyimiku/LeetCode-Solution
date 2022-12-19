@@ -1,6 +1,6 @@
 package org.solution.common;
 
-import com.sun.tools.javac.util.Assert;
+import cn.hutool.core.lang.Assert;
 
 /**
  * @author ：sjq
@@ -33,7 +33,7 @@ public class ListNode {
      * @return
      */
     public static ListNode generateListNode(int... a) {
-        Assert.checkNonNull(a, "构造链表传入数组不能为空");
+        Assert.notNull(a, "构造链表传入数组不能为空");
         ListNode dummyHead = new ListNode(-1);
         ListNode head = dummyHead;
         for (int j : a) {
@@ -46,8 +46,9 @@ public class ListNode {
 
     public static void forEachListNode(ListNode head) {
         while (head != null) {
-            System.out.printf("%d ", head.val);
+            System.out.printf("%d->", head.val);
             head = head.next;
         }
+        System.out.print("NULL");
     }
 }
