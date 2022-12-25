@@ -46,8 +46,9 @@ public class ListNode {
 
     public static void forEachListNode(ListNode head) {
         while (head != null) {
-            System.out.printf("%d ", head.val);
+            System.out.printf("%d->", head.val);
             head = head.next;
         }
+        System.out.print("NULL");
     }
 }

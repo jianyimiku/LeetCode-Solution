@@ -1,4 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.LUSHR;
 import org.solution.common.ListNode;
 
 @SuppressWarnings("all")
