@@ -1,7 +1,6 @@
 package org.solution.origin.sort;
 
-import cn.hutool.core.lang.Assert;
-import org.solution.common.ArrayUtil;
+import org.solution.common.ArrayUtils;
 
 import java.util.Arrays;
 
@@ -15,7 +14,7 @@ import java.util.Arrays;
 public class MergeSort {
     public static void main(String[] args) {
         MergeSort mergeSort = new MergeSort();
-        int[] ints = ArrayUtil.generateIntegerArraysWithMaxBounds(100, Integer.MAX_VALUE);
+        int[] ints = ArrayUtils.generateIntegerArraysWithMaxBounds(100, Integer.MAX_VALUE);
 //        int[] origin = Arrays.copyOfRange(ints, 0, ints.length);
 //        Arrays.sort(origin);
         mergeSort.mergeSort(ints, 0, ints.length - 1);

@@ -1,6 +1,6 @@
 package org.solution.origin.sort;
 
-import org.solution.common.ArrayUtil;
+import org.solution.common.ArrayUtils;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] ints = ArrayUtil.generateIntegerArraysWithMaxBounds(10, 11);
+        int[] ints = ArrayUtils.generateIntegerArraysWithMaxBounds(10, 11);
         selectionSort(ints);
         System.out.println(Arrays.toString(ints));
     }

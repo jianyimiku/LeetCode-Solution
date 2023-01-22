@@ -1,10 +1,6 @@
 package org.solution.common;
 
-import java.util.Arrays;
 import java.util.Random;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 /**
  * @author ：sjq
@@ -13,7 +9,7 @@ import java.util.stream.Stream;
  * @modified By：
  * @version: $
  */
-public class ArrayUtil {
+public class ArrayUtils {
     public static final Random random = new Random();
 
     /**
