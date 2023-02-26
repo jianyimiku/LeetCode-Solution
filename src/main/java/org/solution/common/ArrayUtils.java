@@ -1,6 +1,7 @@
 package org.solution.common;
 
 import java.util.Random;
+import java.util.Stack;
 
 /**
  * @author ：sjq
@@ -25,5 +26,15 @@ public class ArrayUtils {
 
     public static int[] generateIntegerArraysWithMaxBounds(int n, int max) {
         return random.ints(0, max).limit(n).toArray();
+    }
+
+
+    public static Stack<Integer> generateStackWithArray(int n) {
+        int[] ints = generateIntegerArraysWithMaxBounds(n, Integer.MAX_VALUE);
+        Stack<Integer> stack = new Stack<>();
+        for (int i : ints) {
+            stack.push(i);
+        }
+        return stack;
     }
 }
