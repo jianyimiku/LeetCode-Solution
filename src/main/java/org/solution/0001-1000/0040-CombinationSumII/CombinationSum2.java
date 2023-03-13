@@ -23,10 +23,6 @@ class CombinationSum2 {
             return;
         }
 
-        if (index == candidates.length) {
-            return;
-        }
-
         for (int i = index; i < candidates.length; i++) {
             // 注意去重条件
             if (i > index && candidates[i] == candidates[i - 1]) {
