@@ -3,12 +3,22 @@ import java.util.Arrays;
 @SuppressWarnings("all")
 public class RemoveDuplicatesII {
     public int removeDuplicates(int[] nums) {
-        return 0;
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (j < 2 || nums[i - 2] != nums[j]) {
+                nums[i++] = nums[j];
+            }
+        }
+        System.out.println(Arrays.toString(nums));
+        return i;
     }
 
     public static void main(String[] args) {
         RemoveDuplicatesII removeDuplicatesII = new RemoveDuplicatesII();
-        removeDuplicatesII.removeDuplicates(new int[]{0, 0, 1, 1, 1, 1, 2, 3, 3});
+        System.out.println(removeDuplicatesII.removeDuplicates(new int[]{1, 1, 1, 2, 2, 3}));
     }
 
 }
